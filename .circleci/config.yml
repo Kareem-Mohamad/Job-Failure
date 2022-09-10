@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run:
           name: "Return failure"
-          command: return 1
+          return 1
       - run:
           name: "Failure Alert"
           command: "echo Hello Error!"
