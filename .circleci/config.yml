@@ -22,7 +22,9 @@ jobs:
       - image:  circleci/node:13.8.0
     steps:
       - checkout
-      - run: return 1
+      - run: 
+          name: "Return Failure"
+          exit 1
       - run:
           name: "Failure Alert"
           command: "echo Hello Error!"
